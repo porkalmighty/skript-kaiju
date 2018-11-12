@@ -1,0 +1,433 @@
+/** Table of Contents **/
+/*
+ * 1. General styles
+ * 2. header
+ * 3. Home / Hero
+ * 4. About
+ * 4.1 Skills
+ * 5. Works
+ * 6. Contact
+ * 7. Responsive
+ * 7.1 Tablet
+ * 7.2 Mobile
+ */
+
+/*
+ * 1. General Styles
+ */
+
+@font-face {
+    font-family: Lato;
+    src: url(assets/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoorStory;
+    src: url(assets/fonts/PoorStory-Regular.ttf);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font: normal 1.5em/1.75em Lato,Arial,sans-serif;
+  color:  #723d46;
+  text-align: center;
+  margin: 0;
+  background: #e4e4e4;
+}
+
+h1,h2,h3,h4,h5,h6,
+label,
+input,
+textarea {
+  font-family: PoorStory,Arial,sans-serif;
+  font-weight: normal;
+}
+
+label,
+input,
+textarea {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.flex-wrapper {
+  display:flex;
+  flex-flow:row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#home,
+#contact{
+  background-color: #723d46;
+}
+
+#about,
+#works{
+  padding: 1.56rem 0 0;
+  background-color: #fbf9f8;
+}
+
+.normal-flex{
+  flex: 1 0 0;
+}
+
+.super-flex {
+  flex: 1 100%;
+}
+
+header,
+footer {
+  background-color: #bbbe64;
+}
+
+.contained{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  white-space: pre-line;
+}
+
+a {
+  color: #0a2046;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ba2d0b;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.img-block{
+  padding: 20px;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #bbbe64;
+  border: none;
+}
+
+.btn-link{
+  font-size: 0.875rem;
+}
+
+.btn-link:hover,
+.btn-submit:hover {
+  color: #fff;
+  background: #ba2d0b;
+}
+
+.btn-submit {
+  width: 125px;
+  font-size: 1.25rem;
+  color: #fff;
+  float: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.hidden {
+  position: absolute;
+  left: -999999px;
+}
+
+#hero-title,
+.content-heading {
+  font-size: 3.75rem;
+  margin: 0 auto 1.56rem;
+}
+
+.content-heading {
+  color: #0a2046;
+  text-transform: uppercase;
+}
+
+.content-heading::after {
+  content: " ";
+  width: 204px;
+  border-bottom: 3px solid #0a2046;
+  display: block;
+  margin: 0 auto;
+  top: 15px;
+  position: relative;
+}
+
+/*
+* 2. Header
+*/
+header {
+  padding: 20px 0 13px 0;
+}
+
+#logo {
+  text-align: left;
+}
+
+#menu {
+  flex: 3 0 0;
+  text-align: right;
+}
+
+#menu li {
+  list-style: none;
+  display: inline-flex;
+  padding-right: 30px;
+  font-size: 1.5em;
+}
+
+#menu li a {
+  vertical-align: middle;
+  font-family: PoorStory, Arial, sans-serif;
+}
+
+/*
+* Hero
+*/
+
+#home {
+  padding: 15vh;
+}
+
+#hero-title,
+#hero-subtitle {
+  font-family: Lato, Arial, sans-serif;
+  color: #fff;
+}
+
+#hero-subtitle {
+  font-size: 2em;
+  line-height: 1.25em;
+}
+
+#green {
+  color: #bbbe64;
+  display: block;
+}
+
+#green::after {
+  content: "?";
+  color: #fff;
+}
+
+#jump-to-works {
+  font-size: 1.5rem;
+  padding: 0px 20px;
+}
+
+
+/*
+* About
+*/
+#about p {
+  line-height: 1.25em;
+}
+
+#about p:nth-of-type(2) {
+  margin-bottom: 2.5em;
+}
+/*
+* Skills
+*/
+
+#skills {
+  background-color: #bbbe64;
+  padding: 20px 5vw;
+}
+
+.skills-flex {
+  flex: 1 25%;
+}
+
+#skills-heading {
+  font-size: 2.25em;
+  margin-top: 1.25rem;
+}
+
+#skills-heading.content-heading::after {
+  top: 4px;
+  width: 139px;
+  border-width: 2px;
+}
+
+/*
+* Works
+*/
+
+#works .flex-wrapper {
+  padding: 3.4375rem 0 5.3125rem;
+  justify-content: flex-start;
+}
+
+.works-flex {
+  flex: 1 33%;
+  max-width: 33%;
+}
+
+#works p {
+  font-size: 1rem;
+  line-height: 1em;
+}
+
+/*
+* Contact
+*/
+#contact {
+  background-image: url('assets/images/kaiju-vector.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 0 0 15vh;
+}
+
+#contact .flex-wrapper {
+  justify-content: flex-end;
+}
+
+#contact > .flex-wrapper > #speech-balloon {
+  align-self: flex-start;
+}
+
+#speech-balloon {
+  background-image: url('assets/images/speech-bubble.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 12vh 0;
+}
+
+#speech-balloon h2 {
+  color: #fff;
+  text-transform: inherit;
+}
+
+#speech-balloon h2::after {
+  border: none;
+}
+
+#form-wrapper {
+  flex: 2 0 0;
+  max-width: 50%;
+}
+
+form {
+  padding: 20px;
+  width: 80%;
+}
+
+form * {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+label {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+input, textarea {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+}
+
+/*
+* Footer
+*/
+footer {
+  padding: 0 20px;
+}
+
+#social li {
+  list-style: none;
+  display: inline-flex;
+}
+
+#copyright {
+  font-size: 0.875rem;
+}
+
+#copyright,
+#social {
+  margin: 0;
+}
+
+#social li a {
+  vertical-align: middle;
+}
+
+#social li a::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  background-color: #000;
+  color: #bbbe64;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#fb::before {
+  content: "\f39e";
+}
+
+#ln::before {
+  content: "\f0e1";
+}
+
+/*
+ * 7. Responsive
+ *
+ * 7.1 Tablet
+ */
+
+@media screen and (max-width: 1024px){
+  #logo {
+      flex: 1 100%;
+      padding: 0 30vw;
+    }
+
+  #menu {
+      text-align: center;
+    }
+
+  .works-flex {
+      flex: 1 50%;
+      max-width: 50%;
+  }
+
+  #speech-balloon {
+    background-position: center;
+  }
+
+  #speech-balloon h2 {
+    padding-right: 0;
+    text-align: center;
+  }
+}

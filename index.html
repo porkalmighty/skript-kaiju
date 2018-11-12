@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width=1">
+    <title>SkriptKaiju</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="assets/fonts/fontawesome-free/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="contained">
+      <header>
+        <div class="flex-wrapper">
+          <img src="assets/images/logo.png" class="img normal-flex" id="logo" alt="Logo of a monster roaring Skript Kaiju">
+          <nav id="menu">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <div class="contained">
+      <main id="home">
+        <div class="flex-wrapper">
+          <h1 id="hero-title" class="super-flex">Hello There.</h1>
+          <h2 id="hero-subtitle" class="super-flex">are you looking for a <span id="green">Web Developer</span></h2>
+          <a href="#works" id="jump-to-works" class="btn btn-link">View My Works</a>
+        </div>
+      </main>
+      <section id="about">
+        <h2 class="content-heading">About</h2>
+        <figure id="owner_image">
+          <img src="assets/images/myphoto.png" class="img" alt="picture of myself">
+        </figure>
+        <p>Hello, my name is Mark and I’m a web developer!
+          I do frontend and backend development, but I mostly work on
+          Wordpress sites.</p>
+        <p>SkriptKaiju is my freelance pseudonym and I officially used it
+          in 2017 when I worked with a former client.</p>
+        <aside id="skills">
+          <h2 id="skills-heading" class="content-heading">Skills</h2>
+          <div class="flex-wrapper">
+            <div class="img-block skills-flex">
+              <img src="assets/images/html5.png" class="img" alt="html5 logo">
+            </div>
+            <div class="img-block skills-flex">
+              <img src="assets/images/css3.png" class="img" alt="css3 logo">
+            </div>
+            <div class="img-block skills-flex">
+              <img src="assets/images/php.png" class="img" alt="php logo">
+            </div>
+            <div class="img-block skills-flex">
+              <img src="assets/images/javascript.png" class="img" alt="javascript logo">
+            </div>
+            <div class="img-block skills-flex">
+              <img src="assets/images/jquery.png" class="img" alt="jquery logo">
+            </div>
+            <div class="img-block skills-flex">
+              <img src="assets/images/git.png" class="img" alt="git logo">
+            </div>
+            <div class="img-block skills-flex">
+              <img src="assets/images/wordpress.png" class="img" alt="wordpress logo">
+            </div>
+            <div class="img-block skills-flex">
+              <img src="assets/images/bootstrap.png" class="img" alt="bootstrap logo">
+            </div>
+          </div>
+        </aside>
+      </section>
+      <section id="works">
+        <h2 class="content-heading">Works</h2>
+        <div class="flex-wrapper">
+          <div class="img-block works-flex">
+            <img src="assets/images/txosta.png" alt="logo of txosta website">
+            <p>A one pager, fully responsive restaurant
+              catalogue website made from Wordpress</p>
+              <a href="#" target="_blank" class="btn btn-link">View Website</a>
+          </div>
+          <div class="img-block works-flex">
+            <img src="assets/images/sally-salad.png" alt="logo of sally salad website">
+            <p>A fully responsive restaurant catalogue
+              website made from Wordpress</p>
+              <a href="#" target="_blank" class="btn btn-link">View Website</a>
+          </div>
+          <div class="img-block works-flex">
+            <img src="assets/images/mixus.png" alt="logo of mixus website">
+            <p>A fully responsive  design agency catalogue
+              website made from Wordpress</p>
+              <a href="#" target="_blank" class="btn btn-link">View Website</a>
+          </div>
+          <div class="img-block works-flex">
+            <img src="assets/images/the-knight.png" alt="logo of the knight website">
+            <p>A fully responsive wine
+              catalogue website made from Wordpress</p>
+              <a href="#" target="_blank" class="btn btn-link">View Website</a>
+          </div>
+          <div class="img-block works-flex">
+            <img src="assets/images/niew-peking.png" alt="logo of niew-peking website">
+            <p>A fully responsive restaurant
+              catalogue website made from Wordpress</p>
+              <a href="#" target="_blanks" class="btn btn-link">View Website</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="flex-wrapper">
+          <div id="speech-balloon" class="normal-flex">
+            <h2 class="content-heading align-center">Get in Touch</h2>
+          </div>
+          <div id="form-wrapper">
+            <form id="my-contact-form" name="contact-form" action="index.html" method="post">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="contact_name" placeholder="e.g. Juan Dela Cruz">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="contact_email" placeholder="e.g. jdc@mail.ca">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="contact_message" rows="8" cols="80" placeholder="Enter your message"></textarea>
+              <button type="submit" class="btn btn-submit align-center" id="submit_button" name="submit-button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="flex-wrapper">
+          <p id="copyright" class="normal-flex align-left">SkriptKaiju &copy; 2018</p>
+          <ul id="social" class="normal-flex align-right">
+            <li><a href="#" id="fb"><span class="hidden">facebook</span></a></li>
+            <li><a href="#" id="ln"><span class="hidden">linkedin</span></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
