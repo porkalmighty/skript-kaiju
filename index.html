@@ -8,30 +8,32 @@
     <link href="assets/fonts/fontawesome-free/css/all.css" rel="stylesheet">
   </head>
   <body>
-    <div class="contained">
-      <header>
+    <header id="top">
+      <div class="contained">
         <div class="flex-wrapper">
           <img src="assets/images/logo.png" class="img normal-flex" id="logo" alt="Logo of a monster roaring Skript Kaiju">
           <nav id="menu">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a class="section-links" href="#home">Home</a></li>
+              <li><a class="section-links" href="#about">About</a></li>
+              <li><a class="section-links" href="#works">Works</a></li>
+              <li><a class="section-links" href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
-      </header>
-    </div>
-    <div class="contained">
-      <main id="home">
+      </div>
+    </header>
+    <main id="home">
+      <div class="contained">
         <div class="flex-wrapper">
           <h1 id="hero-title" class="super-flex">Hello There.</h1>
           <h2 id="hero-subtitle" class="super-flex">are you looking for a <span id="green">Web Developer</span></h2>
-          <a href="#works" id="jump-to-works" class="btn btn-link">View My Works</a>
+          <a href="#works" id="jump-to-works" class="btn btn-link section-links">View My Works</a>
         </div>
-      </main>
-      <section id="about">
+      </div>
+    </main>
+    <section id="about">
+      <div class="contained">
         <h2 class="content-heading">About</h2>
         <figure id="owner_image">
           <img src="assets/images/myphoto.png" class="img" alt="picture of myself">
@@ -41,7 +43,9 @@
           Wordpress sites.</p>
         <p>SkriptKaiju is my freelance pseudonym and I officially used it
           in 2017 when I worked with a former client.</p>
-        <aside id="skills">
+      </div>
+      <aside id="skills">
+        <div class="contained">
           <h2 id="skills-heading" class="content-heading">Skills</h2>
           <div class="flex-wrapper">
             <div class="img-block skills-flex">
@@ -69,9 +73,11 @@
               <img src="assets/images/bootstrap.png" class="img" alt="bootstrap logo">
             </div>
           </div>
-        </aside>
-      </section>
-      <section id="works">
+        </div>
+      </aside>
+    </section>
+    <section id="works">
+      <div class="contained">
         <h2 class="content-heading">Works</h2>
         <div class="flex-wrapper">
           <div class="img-block works-flex">
@@ -105,8 +111,10 @@
               <a href="#" target="_blanks" class="btn btn-link">View Website</a>
           </div>
         </div>
-      </section>
-      <section id="contact">
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contained" id="kaiju">
         <div class="flex-wrapper">
           <div id="speech-balloon" class="normal-flex">
             <h2 class="content-heading align-center">Get in Touch</h2>
@@ -123,8 +131,10 @@
             </form>
           </div>
         </div>
-      </section>
-      <footer>
+      </div>
+    </section>
+    <footer>
+      <div class="contained">
         <div class="flex-wrapper">
           <p id="copyright" class="normal-flex align-left">SkriptKaiju &copy; 2018</p>
           <ul id="social" class="normal-flex align-right">
@@ -132,7 +142,12 @@
             <li><a href="#" id="ln"><span class="hidden">linkedin</span></a></li>
           </ul>
         </div>
-      </footer>
-    </div>
+        <a href="#top" id="scrollToTop" class="btn btn-top hidden"><span class="hidden">Scroll To Top</span></a>
+      </div>
+    </footer>
+    <!-- JQUERy -->
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="myJS.js"></script>
   </body>
 </html>

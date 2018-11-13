@@ -39,7 +39,6 @@ body {
   color:  #723d46;
   text-align: center;
   margin: 0;
-  background: #e4e4e4;
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -136,6 +135,27 @@ a:hover {
   font-size: 1.25rem;
   color: #fff;
   float: right;
+}
+
+.btn-top {
+
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  font-size: 1.5em;
+  padding: 5px;
+  text-align: center;
+  color: #0a2046;
+}
+
+#scrollToTop::before {
+  content: "\f151";
+  font-family: "Font Awesome 5 Free";
 }
 
 .align-left {
@@ -295,7 +315,7 @@ header {
 /*
 * Contact
 */
-#contact {
+#kaiju {
   background-image: url('assets/images/kaiju-vector.png');
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -307,16 +327,13 @@ header {
   justify-content: flex-end;
 }
 
-#contact > .flex-wrapper > #speech-balloon {
-  align-self: flex-start;
-}
-
 #speech-balloon {
-  background-image: url('assets/images/speech-bubble.png');
-  background-position: top center;
+  background-image: url(assets/images/speech-bubble.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
   padding: 12vh 0;
+  align-self: flex-start;
 }
 
 #speech-balloon h2 {
@@ -331,6 +348,9 @@ header {
 #form-wrapper {
   flex: 2 0 0;
   max-width: 50%;
+}
+#submit_button{
+  margin-top: 8px;
 }
 
 form {
@@ -376,21 +396,16 @@ footer {
   margin: 0;
 }
 
-#social li a {
-  vertical-align: middle;
-}
-
 #social li a::before {
-  display: inline-block;
+  display: inline-flex;
   font-family: "Font Awesome 5 Brands";
   background-color: #000;
   color: #bbbe64;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
+  width: 38px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
 }
 
 #fb::before {
@@ -422,12 +437,7 @@ footer {
       max-width: 50%;
   }
 
-  #speech-balloon {
-    background-position: center;
-  }
-
-  #speech-balloon h2 {
-    padding-right: 0;
-    text-align: center;
+  form {
+    width: 100%;
   }
 }
