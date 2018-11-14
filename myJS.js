@@ -18,26 +18,41 @@ jQuery(document).ready(function(){
 
       //apply offset
       jQuery("html, body").stop().animate({ scrollTop: offset }, 800);
-    }
+      //for Mobile -- hide menu upon selecting a link
+      jQuery("#menu").removeClass("mobile")
+      }
   });
+
+
   jQuery(window).scroll(scrollEvents);
+
+  function scrollEvents(){
+    var scrollValue = jQuery(window).scrollTop();
+    if(scrollValue === 0) {
+      jQuery('#header').removeClass('sticky');
+    } else {
+      jQuery('#header').addClass('sticky');
+    }
+
+    if(scrollValue > 300) {
+      jQuery('#scrollToTop').removeClass('hidden');
+    }else {
+      setTimeout(function(){jQuery('#scrollToTop').addClass('hidden');}, 300);
+    }
+  }
+
+
+  jQuery('#mobile').click(function(){
+    jQuery('#menu').toggleClass('mobile');
+  });
+
+  jQuery('#header.sticky a').on("click",function() {
+    console.log('clickity');
+  });
+
 });
 
-function scrollEvents(){
-  var scrollValue = jQuery(window).scrollTop();
-  if(scrollValue === 0) {
-    jQuery('#header').removeClass('sticky');
-    console.log('removed');
-  } else {
-    jQuery('#header').addClass('sticky');
-  }
 
-  if(scrollValue > 300) {
-    jQuery('#scrollToTop').removeClass('hidden');
-  }else {
-    setTimeout(function(){jQuery('#scrollToTop').addClass('hidden');}, 300);
-  }
-}
 /*
  * code references fpr scroll to top and link animation
  * https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2

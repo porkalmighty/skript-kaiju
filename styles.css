@@ -145,6 +145,21 @@ img {
 
 .btn-mobile {
   display: none;
+  flex: 1 100%;
+  max-width: 30%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border: 2px solid;
+  border-radius: 0;
+}
+
+.sticky #mobile {
+  border: none;
+}
+
+.btn-mobile i {
+  padding-right: 5px;
 }
 
 header.sticky {
@@ -250,6 +265,11 @@ header {
 #menu li a {
   vertical-align: middle;
   font-family: PoorStory, Arial, sans-serif;
+}
+
+#menu.mobile  {
+    position:  relative;
+    left: 0;
 }
 
 /*
@@ -467,6 +487,10 @@ footer {
       text-align: center;
     }
 
+  #owner-image {
+    display: none;
+  }
+
   .works-flex {
       flex: 1 50%;
       max-width: 50%;
@@ -485,6 +509,16 @@ footer {
 
   .btn-mobile{
     display: flex;
+  }
+
+  #submit_button {
+    float: none;
+    margin: 0 auto;
+  }
+
+  #menu {
+    position: absolute;
+    left: -999999px;
   }
 
   #logo {
@@ -510,6 +544,31 @@ footer {
 
   .skills-flex {
     flex: 1 50%;
+  }
+
+  #contact .flex-wrapper {
+    justify-content: center;
+  }
+
+  #form-wrapper {
+    flex: 1 100%;
+    max-width: 80%;
+  }
+
+  input, textarea {
+    box-shadow: 2px 3px 9px #000;
+  }
+
+  textarea {
+    margin-bottom: 10px;
+  }
+
+  #speech-balloon {
+    padding: 24vh 0;
+  }
+
+  #kaiju {
+    background-size: contain;
   }
 
 
