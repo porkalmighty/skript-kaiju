@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width=1">
+    <meta name="viewport" content="width=device-width">
     <title>SkriptKaiju</title>
     <link rel="stylesheet" href="styles.css">
     <link href="assets/fonts/fontawesome-free/css/all.css" rel="stylesheet">
   </head>
   <body>
-    <header id="top">
+    <header id="header">
       <div class="contained">
         <div class="flex-wrapper">
-          <img src="assets/images/logo.png" class="img normal-flex" id="logo" alt="Logo of a monster roaring Skript Kaiju">
+          <a href="#home" class="section-links" id="logo-link"><img src="assets/images/logo.png" class="normal-flex" id="logo" alt="Logo of a monster roaring Skript Kaiju"></a>
+          <button type="button" id="mobile" class="btn btn-mobile" name="mobile-button"><i class="fas fa-bars"></i> Menu</button>
           <nav id="menu">
             <ul>
               <li><a class="section-links" href="#home">Home</a></li>
@@ -35,8 +36,8 @@
     <section id="about">
       <div class="contained">
         <h2 class="content-heading">About</h2>
-        <figure id="owner_image">
-          <img src="assets/images/myphoto.png" class="img" alt="picture of myself">
+        <figure id="owner-image">
+          <img src="assets/images/myphoto.jpg" id="my-photo" alt="picture of myself">
         </figure>
         <p>Hello, my name is Mark and I’m a web developer!
           I do frontend and backend development, but I mostly work on
@@ -49,28 +50,28 @@
           <h2 id="skills-heading" class="content-heading">Skills</h2>
           <div class="flex-wrapper">
             <div class="img-block skills-flex">
-              <img src="assets/images/html5.png" class="img" alt="html5 logo">
+              <img src="assets/images/html5.png" alt="html5 logo">
             </div>
             <div class="img-block skills-flex">
-              <img src="assets/images/css3.png" class="img" alt="css3 logo">
+              <img src="assets/images/css3.png" alt="css3 logo">
             </div>
             <div class="img-block skills-flex">
-              <img src="assets/images/php.png" class="img" alt="php logo">
+              <img src="assets/images/php.png" alt="php logo">
             </div>
             <div class="img-block skills-flex">
-              <img src="assets/images/javascript.png" class="img" alt="javascript logo">
+              <img src="assets/images/javascript.png" alt="javascript logo">
             </div>
             <div class="img-block skills-flex">
-              <img src="assets/images/jquery.png" class="img" alt="jquery logo">
+              <img src="assets/images/jquery.png" alt="jquery logo">
             </div>
             <div class="img-block skills-flex">
-              <img src="assets/images/git.png" class="img" alt="git logo">
+              <img src="assets/images/git.png" alt="git logo">
             </div>
             <div class="img-block skills-flex">
-              <img src="assets/images/wordpress.png" class="img" alt="wordpress logo">
+              <img src="assets/images/wordpress.png" alt="wordpress logo">
             </div>
             <div class="img-block skills-flex">
-              <img src="assets/images/bootstrap.png" class="img" alt="bootstrap logo">
+              <img src="assets/images/bootstrap.png" alt="bootstrap logo">
             </div>
           </div>
         </div>
@@ -84,31 +85,31 @@
             <img src="assets/images/txosta.png" alt="logo of txosta website">
             <p>A one pager, fully responsive restaurant
               catalogue website made from Wordpress</p>
-              <a href="#" target="_blank" class="btn btn-link">View Website</a>
+            <a href="#" target="_blank" class="btn btn-link">View Website</a>
           </div>
           <div class="img-block works-flex">
             <img src="assets/images/sally-salad.png" alt="logo of sally salad website">
             <p>A fully responsive restaurant catalogue
               website made from Wordpress</p>
-              <a href="#" target="_blank" class="btn btn-link">View Website</a>
+            <a href="#" target="_blank" class="btn btn-link">View Website</a>
           </div>
           <div class="img-block works-flex">
             <img src="assets/images/mixus.png" alt="logo of mixus website">
             <p>A fully responsive  design agency catalogue
               website made from Wordpress</p>
-              <a href="#" target="_blank" class="btn btn-link">View Website</a>
+            <a href="#" target="_blank" class="btn btn-link">View Website</a>
           </div>
           <div class="img-block works-flex">
             <img src="assets/images/the-knight.png" alt="logo of the knight website">
             <p>A fully responsive wine
               catalogue website made from Wordpress</p>
-              <a href="#" target="_blank" class="btn btn-link">View Website</a>
+            <a href="#" target="_blank" class="btn btn-link">View Website</a>
           </div>
           <div class="img-block works-flex">
             <img src="assets/images/niew-peking.png" alt="logo of niew-peking website">
             <p>A fully responsive restaurant
               catalogue website made from Wordpress</p>
-              <a href="#" target="_blanks" class="btn btn-link">View Website</a>
+            <a href="#" target="_blanks" class="btn btn-link">View Website</a>
           </div>
         </div>
       </div>
@@ -142,7 +143,7 @@
             <li><a href="#" id="ln"><span class="hidden">linkedin</span></a></li>
           </ul>
         </div>
-        <a href="#top" id="scrollToTop" class="btn btn-top hidden"><span class="hidden">Scroll To Top</span></a>
+        <a href="#home" id="scrollToTop" class="btn btn-top hidden"><span class="hidden">Scroll To Top</span></a>
       </div>
     </footer>
     <!-- JQUERy -->
