@@ -23,7 +23,7 @@ jQuery(document).ready(function(){
       }
   });
 
-
+  //apply the scroll effect function
   jQuery(window).scroll(scrollEvents);
 
   function scrollEvents(){
@@ -41,13 +41,8 @@ jQuery(document).ready(function(){
     }
   }
 
-
   jQuery('#mobile').click(function(){
     jQuery('#menu').toggleClass('mobile');
-  });
-
-  jQuery('#header.sticky a').on("click",function() {
-    console.log('clickity');
   });
 
 });

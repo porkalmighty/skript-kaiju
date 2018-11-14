@@ -146,36 +146,16 @@ img {
 .btn-mobile {
   display: none;
   flex: 1 100%;
-  max-width: 30%;
+  max-width: 150px;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  border: 2px solid;
+  border: 2px solid #0a2046;
   border-radius: 0;
-}
-
-.sticky #mobile {
-  border: none;
 }
 
 .btn-mobile i {
   padding-right: 5px;
-}
-
-header.sticky {
-  position: fixed;
-  width: 100%;
-  padding: 0;
-  z-index: 100;
-  height: 90px;
-}
-
-.sticky #logo {
-  width: 300px;
-}
-
-.sticky #menu li a{
-  font-size: 1.8rem;
 }
 
 #scrollToTop {
@@ -242,6 +222,14 @@ header {
   -ms-transition: all 0.1s ease-in;
 }
 
+header.sticky {
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  z-index: 100;
+  height: 90px;
+}
+
 #logo {
   text-align: left;
 }
@@ -267,8 +255,26 @@ header {
   font-family: PoorStory, Arial, sans-serif;
 }
 
+.sticky #logo {
+  width: 300px;
+  flex: 1 0 0;
+  padding: 0;
+}
+
+.sticky menu {
+  text-align: right;
+}
+
+.sticky #menu li a{
+  font-size: 1.8rem;
+}
+
+.sticky #mobile {
+  border: none;
+}
+
 #menu.mobile  {
-    position:  relative;
+    position: relative;
     left: 0;
 }
 
@@ -455,8 +461,8 @@ footer {
   background-color: #000;
   color: #bbbe64;
   border-radius: 50%;
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -546,6 +552,11 @@ footer {
     flex: 1 50%;
   }
 
+  #hero-subtitle {
+    font-size: 1.5em;
+    margin-top: 0px;
+  }
+
   #contact .flex-wrapper {
     justify-content: center;
   }
@@ -564,12 +575,64 @@ footer {
   }
 
   #speech-balloon {
-    padding: 24vh 0;
+    padding: 15vh 0;
   }
 
   #kaiju {
     background-size: contain;
   }
 
+  #copyright.normal-flex,
+  #social.normal-flex {
+    flex: 1 50%;
+  }
 
+}
+
+@media screen and (max-width: 320px) {
+
+  #home {
+    padding: 10vh 5vw;
+  }
+
+  header.sticky {
+    padding-bottom: 10px;
+  }
+
+  .sticky #mobile {
+    border: 2px solid #0a2046;
+  }
+
+  #hero-title,
+  .content-heading {
+    font-size: 2.75rem;
+  }
+
+  #hero-subtitle {
+    font-size: 1.2em;
+  }
+
+  .content-heading {
+    padding-bottom: 20px;
+  }
+
+  #about p{
+    padding: 5vw;
+  }
+
+  .skills-flex {
+    flex: 1 100%;
+  }
+
+  #works .flex-wrapper {
+    padding: 0 0 1.5em;
+  }
+
+  .img-block {
+    padding-bottom: 30px;
+  }
+
+  #submit_button {
+    margin-top: 20px;
+  }
 }
